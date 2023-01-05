@@ -1,0 +1,17 @@
+<div class="p-5 mb-4 bg-light rounded-3">
+  <div class="container-fluid py-5" style="text-align: center;">
+    <h1 class="display-5 fw-bold" style="background: linear-gradient(to left,
+                    violet,indigo,blue,green,rgb(255, 162, 0),rgb(255, 0, 140),rgb(255, 153, 0));
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    min-height: 65px;">Sign in with Outlook</h1>
+    <p class="lead">This App demonstrates Sign in with Microsoft feature</p>
+    {{#if user}}
+      <h4>Hi {{ user.displayName }}!</h4>
+      <br><br>
+      <a href="/auth/signout" class="btn btn-primary btn-large">Sign Out</a>
+    {{else}}
+      <a href="/auth/signin" class="btn btn-primary btn-large">Sign In</a>
+    {{/if}}
+  </div>
+</div>
